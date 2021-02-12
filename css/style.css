@@ -1,0 +1,22 @@
+.responsive {
+  width: 100%;
+  height: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f1efef;
+}
+
+th {
+  background-color: #ffffff;
+}
