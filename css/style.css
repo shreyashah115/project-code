@@ -1,16 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+body {
+  font-family: 'Fira Sans', sans-serif;
+  color: #222028;
+}
 .responsive {
   width: 100%;
   height: auto;
 }
+
+.nav-2 {
+  display: inline;
+}
+
+.navigation {
+  background-color: #353A42;
+  color:#FFBC48;
+  font-weight: 600;
+}
+
+li {
+  margin: 0 0 0.5em 0;
+}
+
+
+.tag {
+  background-color: #FFBC48;
+  display: inline;
+}
+a {
+  color: #FFBC48;
+}
+blockquote {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 3em;
+  padding-left: 1em;
+  border-left: 0.3em solid #FFBC48;
+  display:inline-flex;
+} 
+
+
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
 td, th {
-  border: 1px solid #000000;
+  border: 0.1em solid #000000;
   text-align: center;
-  padding: 10px;
+  padding: 1em;
 }
 
 tr:nth-child(even) {
