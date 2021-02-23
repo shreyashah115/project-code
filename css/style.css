@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
 
 body {
   font-family: 'Fira Sans', sans-serif;
@@ -14,12 +14,16 @@ article {
   box-sizing: border-box;
 }
 
+p, blockquote, figcaption, table {
+  font-family: Georgia, serif;
+}
+
 .header {
   background-color: #353A42;
   background-blend-mode: multiply;
   background-image: url("/img/ingredients-480w.jpg");
   background-size: cover;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 1em;
 }
 
@@ -28,7 +32,7 @@ ul {
   margin-block-end: 0;
 }
 
-main, footer, header, nav {
+main, header, nav {
   padding: 0 1em;
   display: flow-root;
 }
@@ -53,6 +57,7 @@ main, footer, header, nav {
 
 .ingredients {
   padding-inline-start: 1em;
+  font-family: Georgia, serif;
 }
 
 .nav-2 {
@@ -60,12 +65,12 @@ main, footer, header, nav {
   list-style-type: none;
 }
 
-.timings {
-  font-weight: 800;
-}
-
 li {
   margin: 0 0 0.5em 0;
+}
+
+li:last-child {
+  margin: 0;
 }
 
 .tag {
@@ -116,7 +121,6 @@ tr:nth-child(even) {
 th {
   background-color: #ffffff;
 }
-
 
 .footer {
 background-color: #353A42;
