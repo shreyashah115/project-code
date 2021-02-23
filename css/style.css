@@ -127,14 +127,14 @@ th {
 }
 
 .footer {
-background-color: #353A42;
-padding: 1em;
-display: flex;
+  background-color: #353A42;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright {
   color: #ffffff;
-  flex: 1;
 }
 
 .icons {
