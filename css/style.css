@@ -1,18 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); */
 
 body {
   font-family: 'Fira Sans', sans-serif;
   color: #222028;
+  margin: 0;
 }
 
-header {
-  margin: -0.5em;
-  padding: 0.5em;
+article {
+  width: auto;
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.header {
   background-color: #353A42;
   background-blend-mode: multiply;
   background-image: url("/img/ingredients-480w.jpg");
   background-size: cover;
   color: #ffffff;
+  padding: 1em;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+main, footer, header, nav {
+  padding: 0 1em;
+  display: flow-root;
+}
+
+.nav-1 {
+  padding-inline-start: 0;
+  list-style-type: none;
 }
 
 .responsive {
@@ -23,21 +46,23 @@ header {
 .navigation {
   background-color: #353A42;
   color:#FFBC48;
+  padding-block-start: 1em;
+  padding-block-end: 1em;
   font-weight: 600;
-  margin: 0 -2.5em;
-  padding: 0.5em 0;
+}
+
+.ingredients {
+  padding-inline-start: 1em;
 }
 
 .nav-2 {
+  padding-inline-start: 0;
   list-style-type: none;
 }
 
-
 .timings {
   font-weight: 800;
-  margin: 0 -2.5em;
 }
-
 
 li {
   margin: 0 0 0.5em 0;
@@ -52,16 +77,26 @@ li {
 
 a {
   color: #FFBC48;
+  font-weight: 600;
 }
-blockquote {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 3em;
-  padding-left: 1em;
-  border-left: 0.3em solid #FFBC48;
-  display:inline-flex;
-} 
 
+mark {
+  background-color: #FFBC48;
+}
+
+.navigation-links {
+  text-decoration: none;
+}
+
+.navigation-links:hover {
+  color: #FFFFFF;
+}
+
+blockquote {
+  padding-left: 1em;
+  margin: 0;
+  border-left: 0.3em solid #FFBC48;
+} 
 
 table {
   border-collapse: collapse;
@@ -80,4 +115,30 @@ tr:nth-child(even) {
 
 th {
   background-color: #ffffff;
+}
+
+
+.footer {
+background-color: #353A42;
+padding: 1em;
+display: flex;
+}
+
+.copyright {
+  color: #ffffff;
+  flex: 1;
+}
+
+.icons {
+align-self: center;
+}
+
+.fab {
+  color: #FFBC48;
+  font-size: 2em;
+}
+
+.fab:hover {
+  color: #FFFFFF;
+  font-size: 2.5em;
 }

@@ -20,7 +20,7 @@
   </head>
   <body>
     <article>
-      <header>
+      <header class="header">
         <h4 class="tag">Baking</h4>
         <h1>Delicious No-Knead Baguettes</h1>
         <p>
@@ -29,7 +29,7 @@
           intensive kneading.
         </p>
         <section class="timings">
-          <ul class="nav-2">
+          <ul class="nav-1">
             <li>ACTIVE TIME <strong class="tag">40 MINS</strong></li>
             <li>TOTAL TIME <strong class="tag">3 HRS</strong></li>
             <li>CALORIES <strong class="tag">1670</strong></li>
@@ -39,21 +39,24 @@
       </header>
       <nav class="navigation">
         <ul class="nav-2">
-          <li>Story</li>
-          <li>Ingredients</li>
-          <li>Equipments</li>
-          <li>Process</li>
-          <li>Schedule</li>
-          <li>Result</li>
+          <li><a class="navigation-links" href="#story">Story</a></li>
+          <li>
+            <a class="navigation-links" href="#ingredients">Ingredients</a>
+          </li>
+          <li><a class="navigation-links" href="#equipments">Equipments</a></li>
+          <li><a class="navigation-links" href="#process">Process</a></li>
+          <li><a class="navigation-links" href="#schedule">Schedule</a></li>
+          <li><a class="navigation-links" href="#result">Result</a></li>
         </ul>
       </nav>
       <main>
-        <h2>STORY</h2>
+        <h2 id="story">STORY</h2>
         <p>
-          Lorem ipsum, delicious bread amet consectetur adipisicing elit.
-          Cupiditate quisquam perspiciatis, alias ratione laudantium,
-          consectetur qui aliquam sapiente debitis sed numquam voluptate esse
-          labore repellat ex quibusdam incidunt voluptatibus amet.
+          Lorem ipsum, <a href="#">delicious bread</a> amet consectetur
+          adipisicing elit. Cupiditate quisquam perspiciatis, alias ratione
+          laudantium, consectetur qui aliquam sapiente debitis sed numquam
+          voluptate esse labore repellat ex quibusdam incidunt voluptatibus
+          amet.
         </p>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam non
@@ -92,8 +95,8 @@
           alt="baked-bagguettes-3"
         />
         <br />
-        <h2>INGREDIENTS</h2>
-        <ul>
+        <h2 id="ingredients">INGREDIENTS</h2>
+        <ul class="ingredients">
           <li><strong>500 g</strong> bread flour</li>
           <li><strong>400 g</strong> cool water</li>
           <li><strong>10 g</strong> salt</li>
@@ -101,16 +104,16 @@
           <li>Extra flour (for dusting)</li>
         </ul>
         <br />
-        <h2>EQUIPMENTS</h2>
-        <ol>
+        <h2 id="equipments">EQUIPMENTS</h2>
+        <ul class="ingredients">
           <li>Large bowl</li>
           <li>Plastic wrap</li>
           <li>Baking sheet or stone</li>
           <li>Bench scraper</li>
           <li>Thermometer</li>
-        </ol>
+        </ul>
         <br />
-        <h2>PROCESS</h2>
+        <h2 id="process">PROCESS</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
           molestiae alias unde nostrum ipsa! Non optio eveniet magnam at beatae
@@ -193,7 +196,7 @@
           </li>
         </ol>
         <br />
-        <h2>SCHEDULE</h2>
+        <h2 id="schedule">SCHEDULE</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis,
           beatae quo delectus numquam sint obcaecati dolores, odit neque dolorum
@@ -242,7 +245,7 @@
         </table>
         <br />
         <figcaption>Sample baking schedule</figcaption>
-        <h2>RESULT</h2>
+        <h2 id="result">RESULT</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
           alias optio excepturi iusto consequatur tenetur odio suscipit
@@ -269,16 +272,16 @@
         </p>
       </main>
       <footer>
-        <div>
-          <p>
+        <div class="footer">
+          <p class="copyright">
             Copyright © 1970 <br />
             <a href="#">Terms</a> | <a href="#">Privacy</a>
-            <span
-              ><i class="fab fa-facebook-square"></i>
-              <i class="fab fa-twitter-square"></i>
-              <i class="fab fa-instagram-square"></i
-            ></span>
           </p>
+          <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+          </div>
         </div>
       </footer>
     </article>
