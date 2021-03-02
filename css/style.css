@@ -8,7 +8,6 @@ body {
 
 article {
   width: auto;
-  max-width: 30em;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -44,6 +43,7 @@ main, header, nav {
 .nav-1 {
   padding-inline-start: 0;
   list-style-type: none;
+  text-transform: uppercase;
 }
 
 .responsive {
@@ -59,7 +59,7 @@ main, header, nav {
   font-weight: 600;
 }
 
-.ingredients {
+.ingredients, .ingredients-pounds, .equipments {
   padding-inline-start: 1em;
   font-family: Georgia, serif;
 }
@@ -70,11 +70,7 @@ main, header, nav {
 }
 
 li {
-  margin: 0 0 0.5em 0;
-}
-
-li:last-child {
-  margin: 0;
+  line-height: 3ch;
 }
 
 .tag {
@@ -150,3 +146,6 @@ align-self: center;
   color: #FFFFFF;
   font-size: 2.5em;
 }
+
+
+
