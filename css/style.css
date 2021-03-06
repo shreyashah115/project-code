@@ -274,7 +274,7 @@ align-self: center;
     grid-area: topbar;
     background-color: #353A42;
     background-blend-mode: multiply;
-    background-image: url("/img/ingredients-1920w.jpg");
+    background-image: url("../img/ingredients-1920w.jpg");
     background-size: cover;
     color: #FFFFFF;
     padding: 2em;
