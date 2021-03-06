@@ -50,7 +50,7 @@ a {
 .header {
   background-color: var(--main-bg-color);
   background-blend-mode: multiply;
-  background-image: url("/img/ingredients-480w.jpg");
+  background-image: url("../img/ingredients-480w.jpg");
   background-size: cover;
   color: #FFFFFF;
   padding: 1em;
@@ -314,7 +314,7 @@ align-self: center;
   .header {
     background-color: var(--main-bg-color);
     background-blend-mode: multiply;
-    background-image: url("/img/ingredients-1920w.jpg");
+    background-image: url("../img/ingredients-1920w.jpg");
     background-size: cover;
     color: #FFFFFF;
     padding: 2em 0;
