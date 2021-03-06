@@ -21,21 +21,23 @@
   <body>
     <article class="article">
       <header class="header">
-        <h4 class="tag">Baking</h4>
-        <h1>Delicious No-Knead Baguettes</h1>
-        <p>
-          Make three fluffy and delicious <strong>baguettes</strong>, using a
-          <i>simple</i> <a href="#">folding technique</a>, instead of labor-
-          intensive kneading.
-        </p>
-        <section>
+        <div class="container">
+          <div class="header-text">
+            <h4 class="tag">Baking</h4>
+            <h1>Delicious No-Knead Baguettes</h1>
+            <p>
+              Make three fluffy and delicious <strong>baguettes</strong>, using
+              a <i>simple</i> <a href="#">folding technique</a>, instead of
+              labor- intensive kneading.
+            </p>
+          </div>
           <ul class="nav-1">
             <li>active time <strong class="tag">40 mins</strong></li>
             <li>total time <strong class="tag">3 hrs</strong></li>
             <li>calories <strong class="tag">1670</strong></li>
             <li>skill level <strong class="tag">medium</strong></li>
           </ul>
-        </section>
+        </div>
       </header>
 
       <nav class="navigation">
@@ -44,7 +46,9 @@
           <li>
             <a class="navigation-links" href="#ingredients">Ingredients</a>
           </li>
-          <li><a class="navigation-links" href="#equipments">Equipments</a></li>
+          <li>
+            <a class="navigation-links" href="#equipments">Equipments</a>
+          </li>
           <li><a class="navigation-links" href="#process">Process</a></li>
           <li><a class="navigation-links" href="#schedule">Schedule</a></li>
           <li><a class="navigation-links" href="#result">Result</a></li>
@@ -108,7 +112,7 @@
         </ul>
 
         <ul class="ingredients-pounds">
-          <li><strong>1 pound and 1.6 oz</strong> bread flour</li>
+          <li><strong>1 lbs and 1.6 oz</strong> bread flour</li>
           <li><strong>14 oz</strong> cool water</li>
           <li><strong>0.4 oz</strong> salt</li>
           <li><strong>0.3 oz</strong> yeast</li>
@@ -140,19 +144,21 @@
               quisquam culpa! Asperiores cupiditate voluptates voluptatem ipsa
               quaerat? Soluta, eos ab?
             </p>
-            <img
-              class="responsive"
-              srcset="
-                img/mixing-ingredients-1920w.jpg 1920w,
-                img/mixing-ingredients-960w.jpg   960w,
-                img/mixing-ingredients-480w.jpg   480w
-              "
-              src="img/mixing-ingredients-960w.jpg"
-              alt="mixing-ingredients"
-            />
-            <figcaption>
-              All ingredients mixed to form a shaggy dough
-            </figcaption>
+            <figure class="image">
+              <img
+                class="responsive"
+                srcset="
+                  img/mixing-ingredients-1920w.jpg 1920w,
+                  img/mixing-ingredients-960w.jpg   960w,
+                  img/mixing-ingredients-480w.jpg   480w
+                "
+                src="img/mixing-ingredients-960w.jpg"
+                alt="mixing-ingredients"
+              />
+              <figcaption>
+                All ingredients mixed to form a shaggy dough
+              </figcaption>
+            </figure>
           </li>
           <li>
             <h3>Folding</h3>
@@ -170,7 +176,8 @@
               , to ensure the gluten structure has a chance to develop before
               being disturbed again.
             </p>
-            <img
+            <figure class="image">
+              <img
               class="responsive"
               srcset="
                 img/folding-dough-1920w.jpg 1920w,
@@ -181,6 +188,9 @@
               alt="folding-dough"
             />
             <figcaption>Folding the dough, instead of kneading</figcaption>
+
+            </figure>
+
           </li>
           <li>
             <h3>Proofing</h3>
@@ -190,7 +200,8 @@
               voluptatibus quibusdam expedita dolorem aspernatur maiores,
               corporis maxime ex recusandae amet?
             </p>
-            <img
+            <figure class="image">
+              <img
               class="responsive"
               srcset="
                 img/proofing-1920w.jpg 1920w,
@@ -203,6 +214,9 @@
             <figcaption>
               Dough dusted with flour, ready to sit and proof
             </figcaption>
+
+            </figure>
+
           </li>
           <li>
             <h3>Baking</h3>
@@ -213,7 +227,8 @@
               tempore expedita, mollitia ut eius animi. Delicious baked
               baguettes, cut and stacked
             </p>
-            <img
+            <figure class="image">
+              <img
               class="responsive"
               srcset="
                 img/baked-baguettes-1920w.jpg 1920w,
@@ -224,6 +239,8 @@
               alt="stacked-baked-baguettes"
             />
             <figcaption>Delicious baked baguettes, cut and stacked</figcaption>
+            </figure>
+
           </li>
         </ol>
 
@@ -285,7 +302,8 @@
           similique tempore porro ex modi, praesentium aut error nam atque culpa
           expedita reiciendis.
         </p>
-        <img
+        <figure class="image">
+          <img
           class="responsive"
           srcset="
             img/ready-to-eat-1920w.jpg 1920w,
@@ -296,6 +314,8 @@
           alt="ready-to-eat-baguettes"
         />
         <figcaption>Two baguettes, wrapped up and ready to share</figcaption>
+        </figure>
+
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           voluptates placeat dolore eaque necessitatibus cupiditate sit nisi.
@@ -310,17 +330,15 @@
         </p>
       </section>
 
-      <footer>
-        <div class="footer">
-          <p class="copyright">
-            Copyright © 1970 <br />
-            <a href="#">Terms</a> | <a href="#">Privacy</a>
-          </p>
-          <div class="icons">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram-square"></i>
-          </div>
+      <footer class="footer">
+        <p class="copyright">
+          Copyright © 1970 <br />
+          <a href="#">Terms</a> | <a href="#">Privacy</a>
+        </p>
+        <div class="icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram-square"></i>
         </div>
       </footer>
     </article>
