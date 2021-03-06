@@ -1,10 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
 
 
+:root {
+  --main-bg-color: #353A42;
+  --yellow-color: #FFBC48;
+  --footer-color: #222028;
+}
+
 body {
   font-family: 'Fira Sans', sans-serif;
-  color: #222028;
+  color: var(--footer-color);
   margin: 0;
+}
+
+p, blockquote, figcaption, table {
+  font-family: Georgia, serif;
+}
+
+ul {
+  margin-block-start: 0;
+}
+
+li {
+  line-height: 3ch;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+a {
+  color: var(--yellow-color);
+  font-weight: 600;
 }
 
 .story, .process-result, .side-navbar, .header, .navigation {
@@ -20,25 +47,13 @@ body {
   box-sizing: border-box;
 }
 
-p, blockquote, figcaption, table {
-  font-family: Georgia, serif;
-}
-
-h1 {
-  font-size: 3em;
-}
-
 .header {
-  background-color: #353A42;
+  background-color: var(--main-bg-color);
   background-blend-mode: multiply;
   background-image: url("/img/ingredients-480w.jpg");
   background-size: cover;
   color: #FFFFFF;
   padding: 1em;
-}
-
-ul {
-  margin-block-start: 0;
 }
 
 .nav-1 {
@@ -47,14 +62,19 @@ ul {
   text-transform: uppercase;
 }
 
+.image {
+  margin: 0;
+  width: 100%;
+}
+
 .responsive {
   width: 100%;
   height: auto;
 }
 
 .navigation {
-  background-color: #353A42;
-  color:#FFBC48;
+  background-color: var(--main-bg-color);
+  color:var(--yellow-color);
   padding-block-start: 1em;
   font-weight: 600;
 }
@@ -69,61 +89,60 @@ ul {
   list-style-type: none;
 }
 
-li {
-  line-height: 3ch;
-}
-
 .tag {
-  background-color: #FFBC48;
+  background-color: var(--yellow-color);
   display: inline;
-  color: #222028;
+  color: var(--footer-color);
   padding: 0.1em 0.2em;
 }
 
-a {
-  color: #FFBC48;
-  font-weight: 600;
-}
-
-mark {
-  background-color: #FFBC48;
+.highlight {
+  background-color: var(--yellow-color);
 }
 
 .navigation-links {
-  text-decoration: none;
+  color: var(--yellow-color);
+  background: linear-gradient(to right, #FFFFFF, #FFFFFF 50%, var(--yellow-color) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none; 
 }
 
 .navigation-links:hover {
-  color: #FFFFFF;
+  background-position: 0 100%;
 }
 
-blockquote {
+.quote {
   padding-left: 1em;
   margin: 0;
-  border-left: 0.3em solid #FFBC48;
+  border-left: 0.3em solid var(--yellow-color);
 } 
 
-table {
+.table {
   border-collapse: collapse;
   width: 100%;
 }
 
-td, th {
+.table td, th {
   border: 0.1em solid #000000;
   text-align: center;
   padding: 1em;
 }
 
-tr:nth-child(even) {
+.table tr:nth-child(even) {
   background-color: #f1efef;
 }
 
-th {
+.table th {
   background-color: #ffffff;
 }
 
 .footer {
-  background-color: #222028;
+  background-color: var(--footer-color);
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -138,7 +157,7 @@ align-self: center;
 }
 
 .fab {
-  color: #FFBC48;
+  color: var(--yellow-color);
   font-size: 2em;
 }
 
@@ -184,7 +203,7 @@ align-self: center;
 }
 
 .switch {
-	background-color: #FFBC48;
+	background-color: var(--yellow-color);
 	height: 1.5em;
 	width: 3em;
   clip: rect(0 0 0 0);
@@ -211,13 +230,14 @@ align-self: center;
   -webkit-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease;
 }
+
 .switch::after {
   top: 0;
   left: 0;
 	height: 1.8em;
 	width: 3.3em;
 	border-radius: 1.5em;
-  background-color: #FFBC48;
+  background-color: var(--yellow-color);
   border: 0.2em solid #000000;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
   -webkit-transition: left 0.25s ease;
@@ -229,7 +249,6 @@ align-self: center;
 	color: rgba(0,0,0,0.8);
 }
 
-
 .ingredients-pounds {
   display: none;
 }
@@ -237,16 +256,38 @@ align-self: center;
 .mode:checked ~ .ingredients {
   display: none;
 }
+
 .mode:checked ~ .ingredients-pounds {
   display: block;
 }
 
-.image {
-  margin: 0;
-  width: 100%;
+.dot-group {
+  text-align: center;
+  transform: translateY(-30px);
 }
 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:first-child {
+  background-color: var(--yellow-color);
+}
+
+
 @media screen and (min-width: 960px) {
+
+  body {
+    background-color: var(--main-bg-color);
+  }
+
   .image {
     line-height: 0;
     position: relative;
@@ -259,63 +300,72 @@ align-self: center;
     width: 100%;
     height: 100%;
   }
+
   .article {
-    grid-template-columns: 1fr 0.7fr 1.3fr 1fr;
-    background-color: #353A42;
+    width: 70em;
+    grid-template-columns: 0.5fr 1.5fr;
     grid-template-areas: 
-    "topbar  topbar topbar topbar"
-    ". sidebar navigation ."
-    ". sidebar main ."
-    ". sidebar process ."
-    ". sidebar footer .";
+    "sidebar navigation"
+    "sidebar main"
+    "sidebar process"
+    "sidebar footer";
   }
 
   .header {
-    grid-area: topbar;
-    background-color: #353A42;
+    background-color: var(--main-bg-color);
     background-blend-mode: multiply;
     background-image: url("/img/ingredients-1920w.jpg");
     background-size: cover;
     color: #FFFFFF;
-    padding: 2em;
-    display: flex;
-    justify-content: space-around;
+    padding: 2em 0;
   }
+
+  .container {
+    width: 70em;
+    margin: 0 auto;
+  }
+
   .story {
     grid-area: main;
     background-color: #ffffff;
   }
+
   .nav-1 {
     display: inline-flex;
-    gap: 8em;
+    gap: 6em;
 }
+
   .side-navbar {
     margin-top: -2em;
     grid-area: sidebar;
-    background-color: #FFBC48;
+    background-color: var(--yellow-color);
   }
+
   .navigation {
     margin-top: -2em;
     grid-area: navigation;
   }
+
   .nav-2 {
     display: inline-flex;
     gap: 4em;
   }
+
   .process-result {
     grid-area: process;
     background-color: #ffffff;
   }
+
   .footer {
     grid-area: footer;
   }
+
   .image:hover figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.7);
     color: white;
-  }
   }
   
 }

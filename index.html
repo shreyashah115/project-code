@@ -19,27 +19,26 @@
     />
   </head>
   <body>
-    <article class="article">
-      <header class="header">
-        <div class="container">
-          <div class="header-text">
-            <h4 class="tag">Baking</h4>
-            <h1>Delicious No-Knead Baguettes</h1>
-            <p>
-              Make three fluffy and delicious <strong>baguettes</strong>, using
-              a <i>simple</i> <a href="#">folding technique</a>, instead of
-              labor- intensive kneading.
-            </p>
-          </div>
-          <ul class="nav-1">
-            <li>active time <strong class="tag">40 mins</strong></li>
-            <li>total time <strong class="tag">3 hrs</strong></li>
-            <li>calories <strong class="tag">1670</strong></li>
-            <li>skill level <strong class="tag">medium</strong></li>
-          </ul>
+    <header class="header">
+      <div class="container">
+        <div class="header-text">
+          <h4 class="tag">Baking</h4>
+          <h1>Delicious No-Knead Baguettes</h1>
+          <p>
+            Make three fluffy and delicious <strong>baguettes</strong>, using a
+            <i>simple</i> <a href="#">folding technique</a>, instead of labor-
+            intensive kneading.
+          </p>
         </div>
-      </header>
-
+        <ul class="nav-1">
+          <li>active time <strong class="tag">40 mins</strong></li>
+          <li>total time <strong class="tag">3 hrs</strong></li>
+          <li>calories <strong class="tag">1670</strong></li>
+          <li>skill level <strong class="tag">medium</strong></li>
+        </ul>
+      </div>
+    </header>
+    <article class="article">
       <nav class="navigation">
         <ul class="nav-2">
           <li><a class="navigation-links" href="#story">Story</a></li>
@@ -71,7 +70,7 @@
           dignissimos enim dicta?
         </p>
 
-        <blockquote>
+        <blockquote class="quote">
           <i>
             <p>
               Poetry is an act of peace. Peace goes into the making of a poem as
@@ -87,11 +86,17 @@
           doloribus, non fugiat distinctio inventore cum nulla, saepe eligendi
           odit. Assumenda, corrupti.
         </p>
+
         <img
-          class="responsive"
+          class="responsive gallery"
           src="img/gallery-a.jpg"
           alt="baked-baguettes-gallery"
         />
+        <div class="dot-group">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
       </section>
       <div class="side-navbar">
         <h2 id="ingredients">INGREDIENTS</h2>
@@ -170,7 +175,7 @@
             </p>
             <p>
               Be sure to
-              <mark
+              <mark class="highlight"
                 >let your dough sit for about 20-30 minutes between folds</mark
               >
               , to ensure the gluten structure has a chance to develop before
@@ -178,19 +183,17 @@
             </p>
             <figure class="image">
               <img
-              class="responsive"
-              srcset="
-                img/folding-dough-1920w.jpg 1920w,
-                img/folding-dough-960w.jpg   960w,
-                img/folding-dough-480w.jpg   480w
-              "
-              src="img/folding-dough-960w.jpg"
-              alt="folding-dough"
-            />
-            <figcaption>Folding the dough, instead of kneading</figcaption>
-
+                class="responsive"
+                srcset="
+                  img/folding-dough-1920w.jpg 1920w,
+                  img/folding-dough-960w.jpg   960w,
+                  img/folding-dough-480w.jpg   480w
+                "
+                src="img/folding-dough-960w.jpg"
+                alt="folding-dough"
+              />
+              <figcaption>Folding the dough, instead of kneading</figcaption>
             </figure>
-
           </li>
           <li>
             <h3>Proofing</h3>
@@ -202,21 +205,19 @@
             </p>
             <figure class="image">
               <img
-              class="responsive"
-              srcset="
-                img/proofing-1920w.jpg 1920w,
-                img/proofing-960w.jpg   960w,
-                img/proofing-480w.jpg   480w
-              "
-              src="img/proofing-960w.jpg"
-              alt="proofing"
-            />
-            <figcaption>
-              Dough dusted with flour, ready to sit and proof
-            </figcaption>
-
+                class="responsive"
+                srcset="
+                  img/proofing-1920w.jpg 1920w,
+                  img/proofing-960w.jpg   960w,
+                  img/proofing-480w.jpg   480w
+                "
+                src="img/proofing-960w.jpg"
+                alt="proofing"
+              />
+              <figcaption>
+                Dough dusted with flour, ready to sit and proof
+              </figcaption>
             </figure>
-
           </li>
           <li>
             <h3>Baking</h3>
@@ -229,18 +230,19 @@
             </p>
             <figure class="image">
               <img
-              class="responsive"
-              srcset="
-                img/baked-baguettes-1920w.jpg 1920w,
-                img/baked-baguettes-960w.jpg   960w,
-                img/baked-baguettes-480w.jpg   480w
-              "
-              src="img/baked-baguettes-960w.jpg"
-              alt="stacked-baked-baguettes"
-            />
-            <figcaption>Delicious baked baguettes, cut and stacked</figcaption>
+                class="responsive"
+                srcset="
+                  img/baked-baguettes-1920w.jpg 1920w,
+                  img/baked-baguettes-960w.jpg   960w,
+                  img/baked-baguettes-480w.jpg   480w
+                "
+                src="img/baked-baguettes-960w.jpg"
+                alt="stacked-baked-baguettes"
+              />
+              <figcaption>
+                Delicious baked baguettes, cut and stacked
+              </figcaption>
             </figure>
-
           </li>
         </ol>
 
@@ -251,7 +253,7 @@
           natus ipsam dicta corrupti similique? Nam nisi perferendis delectus
           itaque est.
         </p>
-        <table>
+        <table class="table">
           <tr>
             <th colspan="2">Time</th>
             <th rowspan="2">Task</th>
@@ -304,16 +306,16 @@
         </p>
         <figure class="image">
           <img
-          class="responsive"
-          srcset="
-            img/ready-to-eat-1920w.jpg 1920w,
-            img/ready-to-eat-960w.jpg   960w,
-            img/ready-to-eat-480w.jpg   480w
-          "
-          src="img/ready-to-eat-960w.jpg"
-          alt="ready-to-eat-baguettes"
-        />
-        <figcaption>Two baguettes, wrapped up and ready to share</figcaption>
+            class="responsive"
+            srcset="
+              img/ready-to-eat-1920w.jpg 1920w,
+              img/ready-to-eat-960w.jpg   960w,
+              img/ready-to-eat-480w.jpg   480w
+            "
+            src="img/ready-to-eat-960w.jpg"
+            alt="ready-to-eat-baguettes"
+          />
+          <figcaption>Two baguettes, wrapped up and ready to share</figcaption>
         </figure>
 
         <p>
