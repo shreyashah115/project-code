@@ -10,6 +10,7 @@
 :root {
   --main-bg-color: #353A42;
   --blue-color: #ADD8E6;
+  --link-color: #3f7181;
   --footer-color: #222028;
 }
 
@@ -34,6 +35,11 @@ h1 {
 
 a {
   color: var(--blue-color);
+  font-weight: 600;
+}
+
+.text-link {
+  color: var(--link-color);
   font-weight: 600;
 }
 
