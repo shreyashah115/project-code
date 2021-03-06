@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
 
+/* :root {
+  --main-bg-color: #353A42;
+  --blue-color: #FFBC48;
+  --footer-color: #222028;
+} */
 
 :root {
   --main-bg-color: #353A42;
-  --yellow-color: #FFBC48;
+  --blue-color: #ADD8E6;
   --footer-color: #222028;
 }
 
@@ -21,16 +27,13 @@ ul {
   margin-block-start: 0;
 }
 
-li {
-  line-height: 3ch;
-}
-
 h1 {
+  font-family: 'Sofia', cursive;
   font-size: 3em;
 }
 
 a {
-  color: var(--yellow-color);
+  color: var(--blue-color);
   font-weight: 600;
 }
 
@@ -74,7 +77,7 @@ a {
 
 .navigation {
   background-color: var(--main-bg-color);
-  color:var(--yellow-color);
+  color:var(--blue-color);
   padding-block-start: 1em;
   font-weight: 600;
 }
@@ -90,19 +93,19 @@ a {
 }
 
 .tag {
-  background-color: var(--yellow-color);
+  background-color: var(--blue-color);
   display: inline;
   color: var(--footer-color);
   padding: 0.1em 0.2em;
 }
 
 .highlight {
-  background-color: var(--yellow-color);
+  background-color: var(--blue-color);
 }
 
 .navigation-links {
-  color: var(--yellow-color);
-  background: linear-gradient(to right, #FFFFFF, #FFFFFF 50%, var(--yellow-color) 50%);
+  color: var(--blue-color);
+  background: linear-gradient(to right, #ffffff, #ffffff 50%, var(--blue-color) 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -119,7 +122,7 @@ a {
 .quote {
   padding-left: 1em;
   margin: 0;
-  border-left: 0.3em solid var(--yellow-color);
+  border-left: 0.3em solid var(--blue-color);
 } 
 
 .table {
@@ -157,7 +160,7 @@ align-self: center;
 }
 
 .fab {
-  color: var(--yellow-color);
+  color: var(--blue-color);
   font-size: 2em;
 }
 
@@ -203,7 +206,7 @@ align-self: center;
 }
 
 .switch {
-	background-color: var(--yellow-color);
+	background-color: var(--blue-color);
 	height: 1.5em;
 	width: 3em;
   clip: rect(0 0 0 0);
@@ -237,7 +240,7 @@ align-self: center;
 	height: 1.8em;
 	width: 3.3em;
 	border-radius: 1.5em;
-  background-color: var(--yellow-color);
+  background-color: var(--blue-color);
   border: 0.2em solid #000000;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
   -webkit-transition: left 0.25s ease;
@@ -261,6 +264,10 @@ align-self: center;
   display: block;
 }
 
+.nav-1 li, .nav-2 li, .ingredients li, .ingredients-pounds li, .equipments li {
+  line-height: 3ch;
+}
+
 .dot-group {
   text-align: center;
   transform: translateY(-30px);
@@ -278,7 +285,7 @@ align-self: center;
 }
 
 .dot:first-child {
-  background-color: var(--yellow-color);
+  background-color: var(--blue-color);
 }
 
 
@@ -338,7 +345,7 @@ align-self: center;
   .side-navbar {
     margin-top: -2em;
     grid-area: sidebar;
-    background-color: var(--yellow-color);
+    background-color: var(--blue-color);
   }
 
   .navigation {
