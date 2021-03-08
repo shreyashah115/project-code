@@ -209,6 +209,8 @@ align-self: center;
   margin-bottom: 1em;
 	line-height: 0;
 	cursor: pointer;
+  box-shadow:
+  0 22.3px 17.9px #e9f6f7 inset, 0 41.8px 33.4px #f1e9e9 inset, 0 100px 80px #ffffff inset
 }
 
 .switch {
